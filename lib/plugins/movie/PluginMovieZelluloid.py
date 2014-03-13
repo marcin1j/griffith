@@ -51,7 +51,7 @@ class Plugin(movie.Movie):
         self.image_url = 'http://www.zelluloid.de/images/poster/' + gutils.trim(self.page, '<IMG SRC="/images/poster/', '"');
 
     def get_o_title(self):
-        self.o_title = gutils.trim(self.page, 'Originaltitel: ', '<BR>')
+        self.o_title = gutils.regextrim(self.page, 'Originaltitel: ', '(<BR>|<br />)')
         if self.o_title == '':
             self.o_title = gutils.trim(self.page, '<title>', '|')
 

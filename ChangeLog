@@ -7,6 +7,7 @@ Griffith ChangeLog
 
 2014-03-13  Michael Jahn
 	* [#1290146] imdb searches
+	* [#1271874] "weitere Titel" werden in Originaltitel übernommen
 
 2013-12-16  Michael Jahn
 	* better handling of temporary poster files
