@@ -258,6 +258,10 @@ class SearchPlugin(movie.SearchMovie):
             match = self.PATTERN_DIRECT.findall(self.page)
             if len(match) > 0:
                 self.ids.append(match[0])
+            else:
+                # try to look for IMDb id directly
+                if len(self.title) == 7 and re.match('[0-9]+', self.title):
+                    self.ids.append(self.title)
 
 
 #

@@ -2,8 +2,11 @@
 
 Griffith ChangeLog
 ------------------
-(c) 2005-2013  Vasco Nunes, Piotr Ożarowski
+(c) 2005-2014  Vasco Nunes, Piotr Ożarowski
 
+
+2014-03-13  Michael Jahn
+	* [#1290146] imdb searches
 
 2013-12-16  Michael Jahn
 	* better handling of temporary poster files
